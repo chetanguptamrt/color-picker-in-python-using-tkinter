@@ -1,5 +1,5 @@
 from tkinter import *
-from tkinter.messagebox import showinfo,showerror,askyesno
+from tkinter.messagebox import *
 from tkinter.ttk import Notebook
 from pyperclip import copy
 from tkinter.colorchooser import askcolor
@@ -32,6 +32,16 @@ def default_setting():
         '#E1DA00','#7B8788','#99AAAB','#2C3335','#616C6F','#DAE0E2','#535C68','#333945','#2F363F','#586776','#8395A7','#A4B0BD',
         '#777E8B','#758AA2','#47535E','#4C4B4B','#EAF0F1','#E74292','#01CBC6','#BB2CD9','#8B78E6','#00CCCD','#1287A5','#EA7773',
         '#2B2B52','#F5BCBA','#FFFFFF']
+        
+        colorssadd=["#E44236","#B83227","#D63031","#E84342","#FF3031","#BA2F16","#EC4849","#FF3E4D","#E71C23","#EA425C","#E8290B",
+        "#AE1438","#E83350","#FF4848","#FF362E",'#3498DB','#2475B0','#74B9FF','#4834DF','#0A79DF','#30336B','#487EB0','#192A56',
+        '#6A89CC','#0A3D62','#4BCFFA','#0ABDE3','#25CCF7','#67E6DC','#3C40C6','#2ECC72','#26AE60','#6AB04C','#6AB04A','#BADC57',
+        '#43BE31','#45CE30','#10A881','#1BCA9B','#7CEC9F','#019031','#A3CB37','#75DA8B','#53E0BC','#218F76','#EEC213','#F5C469',
+        '#F4C724','#F0DF87','#DFAF2B','#FAC42F','#F3B63A','#FBD28B','#F3B431','#FAD02E','#E5B143','#F3CC79','#F9DDA4','#FFF222',
+        '#E1DA00','#7B8788','#99AAAB','#2C3335','#616C6F','#DAE0E2','#535C68','#333945','#2F363F','#586776','#8395A7','#A4B0BD',
+        '#777E8B','#758AA2','#47535E','#4C4B4B','#EAF0F1','#E74292','#01CBC6','#BB2CD9','#8B78E6','#00CCCD','#1287A5','#EA7773',
+        '#2B2B52','#F5BCBA','#FFFFFF']
+        
         #pickling
         with open(f'color bin\\all_color.dat',mode="wb") as f:
             stu1=color_dat(color1)
